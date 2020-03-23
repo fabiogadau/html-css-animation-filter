@@ -1,1 +1,107 @@
 /* YOUR SOLUTIONS HERE */
+.ex-1-square {
+  transition: background-color 1s;
+}
+
+.ex-1-square:hover {
+  background-color: red;
+}
+
+.ex-2-square {
+  transition: width 1s;
+}
+
+.ex-2-square:active {
+  width: 100%;
+}
+
+.ex-3-square {
+  transition: border-radius linear 0.5s;
+}
+
+.ex-3-square:hover {
+  border-radius: 50%;
+}
+
+.ex-4-square {
+  transition: opacity linear 2s;
+}
+
+.ex-4-square:hover {
+  opacity: 0;
+}
+
+.ex-5-square {
+  transition: transform 1s;
+}
+
+.ex-5-square:hover {
+  transform: scale(2);
+}
+
+.ex-5-square:active {
+  transform: scale(0.5);
+}
+
+.ex-6-img {
+  transition: filter 1s;
+}
+
+.ex-6-img:hover {
+  filter: grayscale(100%);
+}
+
+.ex-7-img {
+  transition: filter linear 1s;
+}
+
+.ex-7-img:hover {
+  filter: hue-rotate(360deg) saturate(500%);
+}
+
+.ex-8-img {
+  transition: filter 1s, border-radius linear 1s;
+}
+
+.ex-8-img:hover {
+  filter: brightness(150%) drop-shadow(8px 8px 10px purple);
+  border-radius: 50px;
+}
+
+.ex-9-img {
+  transition: filter 1s, transform 1s;
+}
+
+.ex-9-img:hover {
+  filter: grayscale(100%) blur(1px);
+  transform: scale(1.5);
+}
+
+.ex-10-icon {
+  animation: infiniteSpin 2s cubic-bezier(.68,-0.55,.27,1.55) infinite 1s;
+}
+
+@keyframes infiniteSpin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ex-11-icon:hover {
+  animation: partialSpin 2s infinite;
+}
+
+@keyframes partialSpin {
+  0% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
